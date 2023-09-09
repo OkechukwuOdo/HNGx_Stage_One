@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Component
 public class UserEntity {
-    private Long id;
     private String slack_name;
     private DayOfWeek current_day;
     private Instant utc_time;

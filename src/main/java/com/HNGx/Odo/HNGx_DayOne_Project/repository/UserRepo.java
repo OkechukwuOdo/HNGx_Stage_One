@@ -15,11 +15,11 @@ import java.util.List;
 public class UserRepo {
 
     List<UserEntity> userEntityList= List.of(
-            new UserEntity(1L,"Odo Osmond", LocalDate.now().getDayOfWeek(), Instant.now(),"Java","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","", 200),
-            new UserEntity(2L,"Osmond Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"Node","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","",200),
-            new UserEntity(3L,"Okechukwu Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"Python","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","",200),
-            new UserEntity(4L,"Okey Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"C#","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","",200),
-            new UserEntity(5L,"Odo Okechukwu", LocalDate.now().getDayOfWeek(), Instant.now(),"C++","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","",200)
+            new UserEntity("Osmond Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"Backend","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java", 200),
+            new UserEntity("Osmond", LocalDate.now().getDayOfWeek(), Instant.now(),"Frontend","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
+            new UserEntity("Okechukwu Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"UI/UX","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
+            new UserEntity("Okey Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"C#","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
+            new UserEntity("Odo Okechukwu", LocalDate.now().getDayOfWeek(), Instant.now(),"C++","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200)
     );
 
     public List<UserEntity> findAllUsers(){
