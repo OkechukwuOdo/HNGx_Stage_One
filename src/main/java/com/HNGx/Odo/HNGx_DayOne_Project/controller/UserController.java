@@ -20,10 +20,11 @@ import java.util.Optional;
 public class UserController {
     private  final UserServiceImplementation userServiceImplementation;
     @GetMapping()
-    public ResponseEntity<Optional<UserEntity>> getUser(@RequestParam(value = "slack_name") String slack_name,
+    public ResponseEntity<UserEntity> getUser(@RequestParam(value = "slack_name") String slack_name,
                                                        @RequestParam(value = "track") String track)
             {
                 log.info("controller");
-        return ResponseEntity.ok(userServiceImplementation.getUser(slack_name,track));
+                UserEntity u=userServiceImplementation.getUser(slack_name,track);
+        return ResponseEntity.ok(u);
     }
 }

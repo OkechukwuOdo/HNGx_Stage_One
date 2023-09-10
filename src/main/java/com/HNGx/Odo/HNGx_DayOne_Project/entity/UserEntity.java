@@ -3,6 +3,7 @@ package com.HNGx.Odo.HNGx_DayOne_Project.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import java.time.DayOfWeek;
@@ -12,10 +13,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
+@Setter
 public class UserEntity {
     private String slack_name;
-    private DayOfWeek current_day;
-    private Instant utc_time;
+    private String current_day;
+    private String utc_time;
     private String track;
     private String github_file_url;
     private String github_repo_url;
