@@ -18,7 +18,7 @@ import java.util.List;
 @Slf4j
 public class UserController {
     private  final UserServiceImplementation userServiceImplementation;
-    @GetMapping("/getUser")
+    @GetMapping()
     public ResponseEntity<List<UserEntity>> getUser(@RequestParam(value = "slack_name") String slack_name,
                                                     @RequestParam(value = "track") String track)
             {

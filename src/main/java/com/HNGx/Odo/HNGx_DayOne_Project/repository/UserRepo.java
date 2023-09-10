@@ -15,9 +15,9 @@ import java.util.List;
 public class UserRepo {
 
     List<UserEntity> userEntityList= List.of(
-            new UserEntity("Osmond Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"Backend","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java", 200),
+            new UserEntity("Osmond_Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"Backend","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java", 200),
             new UserEntity("Osmond", LocalDate.now().getDayOfWeek(), Instant.now(),"Frontend","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
-            new UserEntity("Okechukwu Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"UI/UX","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
+            new UserEntity("Okechukwu_Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"UI/UX","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
             new UserEntity("Okey Odo", LocalDate.now().getDayOfWeek(), Instant.now(),"C#","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200),
             new UserEntity("Odo Okechukwu", LocalDate.now().getDayOfWeek(), Instant.now(),"C++","https://github.com/OkechukwuOdo/HNGx_Stage_One.git","https://github.com/OkechukwuOdo/HNGx_Stage_One/blob/main/src/main/java/com/HNGx/Odo/HNGx_DayOne_Project/HnGxDayOneProjectApplication.java",200)
     );
