@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
@@ -19,8 +20,8 @@ import java.util.List;
 public class UserController {
     private  final UserServiceImplementation userServiceImplementation;
     @GetMapping()
-    public ResponseEntity<List<UserEntity>> getUser(@RequestParam(value = "slack_name") String slack_name,
-                                                    @RequestParam(value = "track") String track)
+    public ResponseEntity<Optional<UserEntity>> getUser(@RequestParam(value = "slack_name") String slack_name,
+                                                       @RequestParam(value = "track") String track)
             {
                 log.info("controller");
         return ResponseEntity.ok(userServiceImplementation.getUser(slack_name,track));
